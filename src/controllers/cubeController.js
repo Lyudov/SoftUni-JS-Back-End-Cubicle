@@ -21,7 +21,7 @@ const cube = await cubeManager.create({
     imageUrl,
     difficultyLevel: Number(difficultyLevel),
 });
-
+ 
 res.redirect('/')
 });
 
