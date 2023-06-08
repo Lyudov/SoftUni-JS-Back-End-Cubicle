@@ -36,7 +36,7 @@ if(!cube) {
 })
 
 router.get('/:cubeId/attach-accessory',(req,res)=>{
-    res.render('accessory/attach');
+    res.render('./accessory/attach');
 });
 
 module.exports = router;
