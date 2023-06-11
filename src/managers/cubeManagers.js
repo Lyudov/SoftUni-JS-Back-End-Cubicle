@@ -29,6 +29,11 @@ exports.create = async (cubeData) => {
     return cube;
 };
 
+exports.update = (cubeId,cubeData) => {
+   const updateCube =  Cube.findByIdAndUpdate(cubeId, cubeData);
+   return updateCube;
+}
+
 exports.attachAccessory = async (cubeId, accessoryId) => {
 
     //    return Cube.findByIdAndUpdate(cubeId, {$push: {accessories: accessoryId}});
